@@ -9,6 +9,8 @@ namespace RedMango_API.Mappings
         public AutoMapperProfile()
         {
             CreateMap<MenuItem,MenuItemDto>().ReverseMap();
+            CreateMap<MenuItem, AddMenuItemDto>().ReverseMap();
+            CreateMap<MenuItem, UpdateMenuItemDto>().ReverseMap();
         }
     }
 }
